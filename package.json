@@ -1,0 +1,26 @@
+{
+  "name": "ethereum-todo-list",
+  "version": "1.0.0",
+  "description": "\"Todo List on Ethereum\"",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CTANG",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.13",
+    "truffle": "^5.4.12",
+    "truffle-contract": "^4.0.31"
+  }
+}
