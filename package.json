@@ -13,7 +13,8 @@
   "author": "CTANG",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "web3": "^1.5.3"
   },
   "devDependencies": {
     "chai": "^4.3.4",
