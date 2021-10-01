@@ -66,3 +66,12 @@ For this Dapp only, run `npm run server` to start the **lite-server**
 
 # [web3.js](https://github.com/ChainSafe/web3.js)
 It is the Ethereum JavaScript API which connects to the [Generic JSON-RPC spec](https://github.com/ethereum/execution-apis). `web3.js` is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
+
+## Syntax to load Eth account and set as default:
+```js
+  let accounts = await web3.eth.getAccounts();
+    web3.eth.defaultAccount = accounts[0]
+
+    // Set the current blockchain account
+    App.account = accounts[0]
+```
