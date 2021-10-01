@@ -1,5 +1,5 @@
-# To run this Dapp"
-1. Ensure to all tools are installed on your machine (Ganache, Truffle, Metamask )
+# To run this Dapp
+1. Ensure all required tools are installed on your machine (Ganache, Truffle, Metamask )
 2. Run `Ganache` to start the local blockchain on your machine.
 3. Clone this repo and run `npm install`
 4. Deploy smart contract to your local blockchain by running:
@@ -32,7 +32,7 @@ Ensure naming the files with correct run order such as:
 Truffle artifacts are stored as JSON files in a project’s `build/contracts/` directory.
 Artifact files follow a formally-specified JSON-Schema
 
-# CONTRACT ABSTRACTIONS
+## CONTRACT ABSTRACTIONS
 Truffle provides contract abstractions for interacting with your contracts
 
 ### From the `artifacts` object
@@ -93,7 +93,7 @@ It is the Ethereum JavaScript API which connects to the [Generic JSON-RPC spec](
     App.account = accounts[0]
 ```
 
-# ChaiJS[ChaiJS](https://github.com/chaijs/chai)
+# [ChaiJS](https://github.com/chaijs/chai)
 Chai is an assertion library, similar to Node's built-in `assert`, for writing test to the smart contract.
 
 Due to its `immutability` **Testing** a smart contract is a **must** of the blockchain development process.
