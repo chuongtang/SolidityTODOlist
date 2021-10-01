@@ -1,3 +1,20 @@
+# To run this Dapp"
+1. Ensure to all tools are installed on your machine (Ganache, Truffle, Metamask )
+2. Run `Ganache` to start the local blockchain on your machine.
+3. Clone this repo and run `npm install`
+4. Deploy smart contract to your local blockchain by running:
+  ```
+  truffle compile
+  ``` 
+  then
+  ```
+  truffle migrate
+  ```
+5. Start the lite-server: `npm run server`
+6. Connect to Metamask (crypto wallet) to your smart contract on Ganache. (Use the private key of the **first** address)
+7. At the browser tab with "Localhost:3000" connect your Metamask to site
+8. Start using the Dapp functionality (Add tasks, complete tasks...)
+
 
 # [GANACHE](https://www.trufflesuite.com/ganache)
 **Ganache** is a personal blockchain for rapid Ethereum and Corda distributed application development. You can use Ganache across the entire `development cycle`; enabling you to develop, deploy, and test your dApps in a safe and deterministic environment.
@@ -75,3 +92,12 @@ It is the Ethereum JavaScript API which connects to the [Generic JSON-RPC spec](
     // Set the current blockchain account
     App.account = accounts[0]
 ```
+
+# ChaiJS[ChaiJS](https://github.com/chaijs/chai)
+Chai is an assertion library, similar to Node's built-in `assert`, for writing test to the smart contract.
+
+Due to its `immutability` **Testing** a smart contract is a **must** of the blockchain development process.
+
+The only way to fix a bug on a deployed smart contract is to deploy a new version of that contract; the old version with the bug will be still on the blockchain and it will remain there **forever**.
+
+So testing the smart contract *before* deploying it will make sure your functions will have the expected behavior.
